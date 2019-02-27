@@ -32,6 +32,22 @@
                         <p>Last name: <input type="text" name="lname" /></p>
                         <input type="submit" value="Submit" />
                     </form>
+
+
+                    <form action="/users_test/update" method="post" enctype="multipart/form-data">
+                        @csrf
+                        <p>First name: <input type="text" name="fname" /></p>
+                        <p>Last name: <input type="text" name="lname" /></p>
+                        <input type="file" name="picture">
+                        <input type="submit" value="Submit" />
+                    </form>
+
+                    <form method="post" enctype="multipart/form-data" >
+                        @csrf
+                        <input type="file" name="picture">
+                        <button type="submit"> 提交 </button>
+                    </form>
+
                 </div>
             </div>
         </div>
