@@ -11,6 +11,7 @@ class UsersTestController extends Controller
     {
 //        $flights = \App\UsersTest::get();
 //        dd($flights);
-        return view('users_test', ['users' => \App\UsersTest::get()]);
+        $users = \App\UsersTest::simplePaginate(1);
+        return view('users_test', ['users' => $users]);
     }
 }

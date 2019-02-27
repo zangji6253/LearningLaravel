@@ -22,6 +22,8 @@
                     @foreach ($users as $user)
                         <p>This is user {{ $user->id }}</p>
                     @endforeach
+
+                    {{ $users->links() }}
                 </div>
             </div>
         </div>
