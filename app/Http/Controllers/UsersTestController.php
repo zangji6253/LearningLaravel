@@ -14,4 +14,17 @@ class UsersTestController extends Controller
         $users = \App\UsersTest::simplePaginate(1);
         return view('users_test', ['users' => $users]);
     }
+
+    /**
+     * 存储新用户
+     *
+     * @param Request $request
+     * @return Response
+     */
+    public function store(Request $request)
+    {
+        $name = $request->input('fname');
+        dd($name);
+        //
+    }
 }

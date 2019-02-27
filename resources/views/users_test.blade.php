@@ -24,6 +24,14 @@
                     @endforeach
 
                     {{ $users->links() }}
+
+
+                    <form method="post">
+                        @csrf
+                        <p>First name: <input type="text" name="fname" /></p>
+                        <p>Last name: <input type="text" name="lname" /></p>
+                        <input type="submit" value="Submit" />
+                    </form>
                 </div>
             </div>
         </div>

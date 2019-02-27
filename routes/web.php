@@ -81,3 +81,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/users_test', 'UsersTestController@index')->name('users_test');
+
+Route::post('/users_test', 'UsersTestController@store');
