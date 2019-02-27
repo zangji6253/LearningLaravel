@@ -76,3 +76,6 @@ Route::get('user/{id}', function ($id) {
 Route::get('user/{id}/{name}', function ($id, $name) {
     // 同时指定 id 和 name 的数据格式
 })->where(['id' => '[0-9]+', 'name' => '[a-z]+']);
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
