@@ -19,6 +19,9 @@
                     <div class="alert alert-primary" role="alert">
                         A simple primary alert—check it out!
                     </div>
+                    @foreach ($users as $user)
+                        <p>This is user {{ $user->id }}</p>
+                    @endforeach
                 </div>
             </div>
         </div>
