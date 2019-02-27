@@ -9,6 +9,8 @@ class UsersTestController extends Controller
     //
     public function index()
     {
-        return view('users_test');
+//        $flights = \App\UsersTest::get();
+//        dd($flights);
+        return view('users_test', ['user' => \App\UsersTest::get()]);
     }
 }
