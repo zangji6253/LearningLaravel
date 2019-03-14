@@ -85,3 +85,5 @@ Route::get('/users_test', 'UsersTestController@index')->name('users_test');
 Route::post('/users_test', 'UsersTestController@store');
 
 Route::post('/users_test/update', 'UsersTestController@update');
+
+Route::view('/nav', 'admin/nav');
