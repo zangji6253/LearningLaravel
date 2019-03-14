@@ -87,3 +87,6 @@ Route::post('/users_test', 'UsersTestController@store');
 Route::post('/users_test/update', 'UsersTestController@update');
 
 Route::view('/nav', 'admin/nav');
+Route::get('/test_editor', 'EditorController@index');
+
+Route::post('/upload', 'EditorController@upload');
